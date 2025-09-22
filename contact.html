@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,21 +11,25 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/fonts.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="form.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="form.js"></script>
 </head>
 <body>
 <!--================Header Menu Area =================-->
 <header class="main_menu_area">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"><img src="img/logo_new.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span></span> <span></span> <span></span> </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    <a class="navbar-brand" href="index.html"><img src="img/logo_new.png" alt="O2F Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+      <span></span> <span></span> <span></span> 
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-        <li class="nav-item dropdown submenu"> <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+        <li class="nav-item dropdown submenu"> 
+          <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li class="nav-item"><a class="nav-link" href="service-cloud.html">Cloud Services</a></li>
             <li class="nav-item"><a class="nav-link" href="service-data.html">Data & Analytics</a></li>
@@ -42,6 +45,7 @@
   </nav>
 </header>
 <!--================End Header Menu Area =================-->
+
 <!--================Banner Area =================-->
 <section class="banner_area contact">
   <div class="container">
@@ -52,43 +56,43 @@
   </div>
 </section>
 <!--================End Banner Area =================-->
+
 <!--================Get in Touch Area =================-->
 <section class="get_in_touch_area p_100">
   <div class="container">
     <div class="row get_touch_inner">
       <div class="col-lg-6">
         <div class="panel panel-danger">
-                            <div class="panel-body">
-                                <form id="reused_form">
-                                    <div class="form-group">
-                                        <label >Name</label>
-                                        <input type="text" name="name" required class="form-control" placeholder="Enter Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label >Email</label>
-                                        <input type="email" name="email" required class="form-control" placeholder="Enter Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label >Message</label>
-                                        <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="btn btn-raised btn-lg btn-warning" type="submit">Send</button>
-                                    </div>
-                                </form>
-                                <div id="error_message" style="width:100%; height:100%; display:none; ">
-                                    <h4>
-                                        Error
-                                    </h4>
-                                    Sorry there was an error sending your form. 
-                                </div>
-                                <div id="success_message" style="width:100%; height:100%; display:none; ">
-<h2>Success! Your Message was Sent Successfully.</h2>
-</div>
-                            </div>
-                        </div>
+          <div class="panel-body">
+            <form id="reused_form">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" required class="form-control" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required class="form-control" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-raised btn-lg btn-warning" type="submit">Send</button>
+              </div>
+            </form>
+            <div id="error_message" style="width:100%; height:100%; display:none;">
+              <h4>Error</h4>
+              Sorry there was an error sending your form. 
+            </div>
+            <div id="success_message" style="width:100%; height:100%; display:none;">
+              <h2>Success! Your Message was Sent Successfully.</h2>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-lg-6">
+        <!-- US Office -->
         <div class="touch_details">
           <div class="l_title">
             <h2>US Office</h2>
@@ -98,6 +102,8 @@
             Suite 103,<br/>
             Irving, TX - 75061</p>
         </div>  
+
+        <!-- India Office -->
         <div class="touch_details">
           <div class="l_title">
             <h2>India Office</h2>
@@ -107,106 +113,50 @@
             Mindspace, <br/>
             Hitech City,<br/>
             Hyderabad 500081</p>
-          
           <h5>Call us now</h5>
           <h4>040 - 40617800</h4>
-          
-          
           <h5>Mail us</h5>
           <h4><a style="color:#0b1033;" href="mailto:contact@o2finfosolutions.com">contact@o2finfosolutions.com</a></h4>
+        </div>
+
+        <!-- Australia Office -->
+        <div class="touch_details">
+          <div class="l_title">
+            <h2>Australia Office</h2>
           </div>
+          <p>O2F IT Consulting<br/>
+            Office 85, Level 2, <br/>
+            51 Lydiard St S,<br/>
+            Ballarat Central<br/>
+            Victoria - 3350</p>
+          <h5>Contact us</h5>
+          <h4>+61 391 112 364</h4>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <!--================End Get in Touch Area =================-->
+
 <!--================Footer Area =================-->
 <footer class="footr_area">
-  <div class="footer_widget_area">
-    <!--<div class="container">
-      <div class="row footer_widget_inner">
-        <div class="col-lg-4 col-sm-6">
-          <aside class="footerlinks">
-            <div class="f_title">
-              <h3>Quick Links</h3>
-            </div>
-             <ul>
-              <li><a href="about-us.html">About O2F</a></li>
-              <li><a href="service-cloud.html">Cloud Services</a></li>
-              <li><a href="service-data.html">Data & Analytics</a></li>
-              <li><a href="service-appdev.html">Application Development</a></li>
-              <li><a href="service-it.html">IT Consulting</a></li>
-              <li><a href="service-telecom.html">Telecom Engineering</a></li>
-              <li><a href="careers.html">Careers</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </aside>
-        </div>
-        <div class="col-lg-8 col-sm-6">
-          <div class="container">
-            <div class="row">
-              <div class='col-md-offset-2 col-md-8 text-center'>
-                <h2>What they said</h2>
-              </div>
-            </div>
-            <div class='row'>
-              <div class='col-md-offset-2 col-md-12'>
-                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-
-                  <ol class="carousel-indicators">
-                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#quote-carousel" data-slide-to="1"></li>
-                  </ol>
-
-                  <div class="carousel-inner">
-
-                    <div class="item active">
-                      <blockquote>
-                        <div class="row">
-                          <div class="col-sm-3 text-center"><img src="img/default.jpg" alt=""></div>
-                          <div class="col-sm-9">
-                            <p>We would like you to know that I appreciate the quality & timeliness of work that you & your team at O2F has done in closing the critical requirements in OFSAA group. It has been a pleasure to do business with you.</p>
-                            <span>Prasad Yegavilla (BOU)</span> <small>Oracle Financial Services Software Ltd.</small> </div>
-                        </div>
-                      </blockquote>
-                    </div>
-
-                    <div class="item">
-                      <blockquote>
-                        <div class="row">
-                          <div class="col-sm-3 text-center"><img src="img/default.jpg" alt=""></div>
-                          <div class="col-sm-9">
-                            <p>For me, O2F represents adrenalin, pure and simple. The sheer motivation and energy that I see around me, project after project, is truly unbelievable. O2F is very organized and the people are very helpful and fun to be with. The best part is, there’s always someone who’s willing to listen to my ideas so I feel heard. I feel respected and wanted here.</p>
-                            <span>Sharath Pandey</span> <small>Programmer Analyst</small> </div>
-                        </div>
-                      </blockquote>
-                    </div>
-                  </div>
-
-                  <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a> <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="footer_copyright">
+    <div class="container">
+      <div class="float-sm-left">
+        <h5>Copyright &copy; 2019 O2F Info. All Rights Reserved.</h5>
       </div>
-    </div>-->
-    <div class="footer_copyright">
-      <div class="container">
-        <div class="float-sm-left">
-          <h5>Copyright &copy 2019 O2F Info. All Rights Reserved.</h5>
-        </div>
-        <div class="float-sm-right">
-          <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-          <div class="copyright">Powered By: <strong><a target="_blank" href="http://valmacreations.com/">ValmaCreations</a></strong></div>
-        </div>
+      <div class="float-sm-right">
+        <ul>
+          <li><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+        <div class="copyright">Powered By: <strong><a target="_blank" href="http://valmacreations.com/">ValmaCreations</a></strong></div>
       </div>
     </div>
   </div>
 </footer>
 <!--================End Footer Area =================-->
+
 <!--================Contact Success and Error message Area =================-->
 <div id="success" class="modal modal-message fade" role="dialog">
   <div class="modal-dialog">
@@ -232,23 +182,20 @@
   </div>
 </div>
 <!--================End Footer Area =================-->
-<script src="js/jquery-3.2.1.min.js"></script>
+
+<!-- Scripts -->
 <script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-
-
 <script src="js/jquery.form.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/contact.js"></script>
 <script src="js/theme.js"></script>
 <script type="text/javascript">
-			$(document).ready(function() {
-			  $('#quote-carousel').carousel({
-				pause: true,
-				interval: 4000,
-			  });
-			});	
-         </script>
+  $(document).ready(function() {
+    $('#quote-carousel').carousel({
+      pause: true,
+      interval: 4000,
+    });
+  }); 
+</script>
 </body>
 </html>
