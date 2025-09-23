@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,18 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/fonts.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="form.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 <!--================Header Menu Area =================-->
 <header class="main_menu_area">
   <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-    <a class="navbar-brand" href="index.html"><img src="img/logo_new.png" alt="O2F Logo"></a>
+    <a class="navbar-brand" href="index.html"><img src="img/logo_new.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
       <span></span> <span></span> <span></span> 
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,7 +31,8 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
         <li class="nav-item dropdown submenu"> 
-          <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+          <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" 
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li class="nav-item"><a class="nav-link" href="service-cloud.html">Cloud Services</a></li>
             <li class="nav-item"><a class="nav-link" href="service-data.html">Data & Analytics</a></li>
@@ -61,6 +64,8 @@
 <section class="get_in_touch_area p_100">
   <div class="container">
     <div class="row get_touch_inner">
+      
+      <!-- Contact Form -->
       <div class="col-lg-6">
         <div class="panel panel-danger">
           <div class="panel-body">
@@ -83,7 +88,7 @@
             </form>
             <div id="error_message" style="width:100%; height:100%; display:none;">
               <h4>Error</h4>
-              Sorry there was an error sending your form. 
+              Sorry there was an error sending your form.
             </div>
             <div id="success_message" style="width:100%; height:100%; display:none;">
               <h2>Success! Your Message was Sent Successfully.</h2>
@@ -91,48 +96,69 @@
           </div>
         </div>
       </div>
+      
+      <!-- Office Details -->
       <div class="col-lg-6">
-        <!-- US Office -->
-        <div class="touch_details">
-          <div class="l_title">
-            <h2>US Office</h2>
+        <div class="row">
+          
+          <!-- US Office -->
+          <div class="col-md-6">
+            <div class="touch_details">
+              <div class="l_title">
+                <h2>US OFFICE</h2>
+              </div>
+              <p>
+                O2F Info<br/>
+                819N OConnor Rd,<br/>
+                Suite 103,<br/>
+                Irving, TX - 75061
+              </p>
+            </div>
           </div>
-          <p>O2F Info<br/>
-            819N OConnor Rd,<br/>
-            Suite 103,<br/>
-            Irving, TX - 75061</p>
-        </div>  
-
-        <!-- India Office -->
-        <div class="touch_details">
-          <div class="l_title">
-            <h2>India Office</h2>
+          
+          <!-- Australia Office -->
+          <div class="col-md-6">
+            <div class="touch_details">
+              <div class="l_title">
+                <h2>AUSTRALIA OFFICE</h2>
+              </div>
+              <p>
+                O2F IT Consulting<br/>
+                Office 85, Level 2,<br/>
+                51 Lydiard St S,<br/>
+                Ballarat Central Victoria - 3350<br/>
+                P: ‪+61 (03) 9111 2364‬
+              </p>
+            </div>
           </div>
-          <p>O2F Info<br/>
-            Plot No 26, Gafoor Nagar, <br/>
-            Mindspace, <br/>
-            Hitech City,<br/>
-            Hyderabad 500081</p>
-          <h5>Call us now</h5>
-          <h4>040 - 40617800</h4>
-          <h5>Mail us</h5>
-          <h4><a style="color:#0b1033;" href="mailto:contact@o2finfosolutions.com">contact@o2finfosolutions.com</a></h4>
-        </div>
-
-        <!-- Australia Office -->
-        <div class="touch_details">
-          <div class="l_title">
-            <h2>Australia Office</h2>
+          
+          <!-- India Office -->
+          <div class="col-md-12">
+            <div class="touch_details">
+              <div class="l_title">
+                <h2>INDIA OFFICE</h2>
+              </div>
+              <p>
+                O2F Info<br/>
+                Plot No 26, Gafoor Nagar,<br/>
+                Mindspace,<br/>
+                Hitech City,<br/>
+                Hyderabad 500081
+              </p>
+              <h5>Call us now</h5>
+              <h4>040 - 40617800</h4>
+              <h5>Mail us</h5>
+              <h4>
+                <a style="color:#0b1033;" href="mailto:contact@o2finfosolutions.com">
+                  contact@o2finfosolutions.com
+                </a>
+              </h4>
+            </div>
           </div>
-          <p>O2F IT Consulting<br/>
-            Office 85, Level 2, <br/>
-            51 Lydiard St S,<br/>
-            Ballarat Central<br/>
-            Victoria - 3350</p>
-          <h5>Contact us</h5>
-          <h4>+61 391 112 364</h4>
+          
         </div>
       </div>
+      
     </div>
   </div>
 </section>
@@ -143,14 +169,16 @@
   <div class="footer_copyright">
     <div class="container">
       <div class="float-sm-left">
-        <h5>Copyright &copy; 2019 O2F Info. All Rights Reserved.</h5>
+        <h5>Copyright &copy 2019 O2F Info. All Rights Reserved.</h5>
       </div>
       <div class="float-sm-right">
         <ul>
-          <li><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
         </ul>
-        <div class="copyright">Powered By: <strong><a target="_blank" href="http://valmacreations.com/">ValmaCreations</a></strong></div>
+        <div class="copyright">Powered By: 
+          <strong><a target="_blank" href="http://valmacreations.com/">ValmaCreations</a></strong>
+        </div>
       </div>
     </div>
   </div>
@@ -162,19 +190,24 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-close"></i> </button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+          <i class="fa fa-close"></i> 
+        </button>
         <h2>Thank you</h2>
         <p>Your message is successfully sent...</p>
       </div>
     </div>
   </div>
 </div>
+
 <!-- Modals error -->
 <div id="error" class="modal modal-message fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <i class="fa fa-close"></i> </button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+          <i class="fa fa-close"></i> 
+        </button>
         <h2>Sorry !</h2>
         <p> Something went wrong </p>
       </div>
@@ -183,19 +216,20 @@
 </div>
 <!--================End Footer Area =================-->
 
-<!-- Scripts -->
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.form.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/contact.js"></script>
 <script src="js/theme.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-    $('#quote-carousel').carousel({
-      pause: true,
-      interval: 4000,
-    });
-  }); 
+$(document).ready(function() {
+  $('#quote-carousel').carousel({
+    pause: true,
+    interval: 4000,
+  });
+}); 
 </script>
 </body>
 </html>
